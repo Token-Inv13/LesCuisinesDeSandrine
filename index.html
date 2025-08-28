@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Les cuisines de Sandrine — Cuisine maison, livraison & click-and-collect</title>
+    <meta name="description" content="Cuisine maison à emporter ou en livraison. Commandez facilement. Plats du jour, formules, options végétariennes. " />
+    <link rel="canonical" href="https://lescuisinesdesandrine.fr/" />
+
+    <!-- Theme / PWA basics -->
+    <meta name="theme-color" content="#9A3B3B" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Les cuisines de Sandrine" />
+    <meta property="og:description" content="Cuisine maison en livraison & click-and-collect" />
+    <meta property="og:url" content="https://lescuisinesdesandrine.fr/" />
+    <meta property="og:image" content="/img/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Les cuisines de Sandrine" />
+    <meta name="twitter:description" content="Cuisine maison en livraison & click-and-collect" />
+    <meta name="twitter:image" content="/img/logo.png" />
+
+    <!-- Fonts: 400/600, swap -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Critical CSS (above the fold) -->
+    <style>
+      :root{--bg:#fff;--fg:#1d1d1f;--accent:#9A3B3B;--muted:#6b7280}
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg);}
+      a{color:var(--accent)}
+      .container{max-width:1040px;margin-inline:auto;padding:0 16px}
+      header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid #eee;z-index:40}
+      .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+      .brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:inherit;font-weight:600}
+      .nav-toggle{background:none;border:1px solid #ddd;border-radius:8px;padding:8px 10px}
+      .nav-menu{display:none}
+      .nav-menu.is-open{display:block}
+      @media (min-width: 768px){.nav-menu{display:block}.nav-toggle{display:none}}
+      .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border:none;border-radius:999px;padding:10px 16px;text-decoration:none}
+      .btn-secondary{background:#1f2937}
+      .hero{padding:32px 0 24px}
+      .hero h1{font-size:clamp(28px,4vw,40px);margin:8px 0}
+      .grid{display:grid;gap:16px}
+      @media (min-width: 768px){.grid-2{grid-template-columns:1fr 1fr}}
+      .section{padding:40px 0}
+      .section h2{font-size:clamp(22px,3.2vw,28px)}
+      .muted{color:var(--muted)}
+      .menu{list-style:disc;padding-left:1.25rem}
+      .menu-item{margin-bottom:10px}
+      .card{border:1px solid #eee;border-radius:12px;padding:16px}
+      .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,1,1);white-space:nowrap;border:0}
+      .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,1,1);white-space:nowrap;border:0}
+      :focus-visible{outline:3px solid #2563eb;outline-offset:3px;border-radius:6px}
+      footer{border-top:1px solid #eee;padding:24px 0;margin-top:24px}
+      img{max-width:100%;height:auto}
+      .logo{width:56px;height:56px}
+    </style>
+
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <a href="#main" class="sr-only">Aller au contenu</a>
+    <header role="banner">
+      <div class="container nav" aria-label="Navigation principale">
+        <a class="brand" href="#" aria-label="Accueil">
+          <img class="logo" src="/img/logo.png" alt="Logo Les cuisines de Sandrine" width="56" height="56" />
+          <span>Les cuisines de Sandrine</span>
+        </a>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Ouvrir le menu</span>☰
+        </button>
+        <nav id="primary-nav" class="nav-menu" role="navigation">
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Commander</a></li>
+            <li><a href="#infos">Infos</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero container">
+        <div class="grid grid-2">
+          <div>
+            <p class="muted">Cuisine maison — livraison & retrait</p>
+            <h1>Des plats gourmands, faits maison, près de chez vous</h1>
+            <p class="muted">Commandez facilement pour ce midi ou ce soir. Options végétariennes et plats du jour.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+              <a href="#menu" class="btn">Voir le menu</a>
+              <a href="#order" class="btn btn-secondary">Commander</a>
+            </div>
+          </div>
+          <div>
+            <div class="hero-gallery" aria-label="Assortiment de plats maison">
+              <div class="hero-scroll">
+                <img src="/img/assortiment-1.jpg" alt="Escalope panée et purée maison, basilic frais" loading="lazy" width="640" height="420" />
+                <img src="/img/assortiment-2.jpg" alt="Poulet croustillant, riz, avocat et concombre" loading="lazy" width="640" height="420" />
+                <img src="/img/assortiment-3.jpg" alt="Pâtes sauce tomate et boulettes maison" loading="lazy" width="640" height="420" />
+                <img src="/img/assortiment-4.jpg" alt="Lasagnes maison au boeuf" loading="lazy" width="640" height="420" />
+                <img src="/img/assortiment-5.jpg" alt="Poulet à la crème" loading="lazy" width="640" height="420" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section container" aria-labelledby="menu-heading">
+        <h2 id="menu-heading">Menu</h2>
+        <ul class="menu" role="list">
+          <li class="menu-item"><strong>Plat du jour</strong> — <span id="today-special">À venir</span></li>
+          <li class="menu-item"><strong>Lasagnes maison</strong> — 9,90€</li>
+          <li class="menu-item"><strong>Salade césar</strong> — 8,50€</li>
+          <li class="menu-item"><strong>Soupe du moment</strong> — 5,50€</li>
+        </ul>
+      </section>
+
+      <section id="order" class="section container" aria-labelledby="order-heading">
+        <h2 id="order-heading">Commander</h2>
+        <div class="grid">
+          <form id="order-form" class="card" aria-describedby="order-help" novalidate>
+            <p id="order-help" class="muted">Les champs marqués * sont obligatoires.</p>
+
+            <div class="grid grid-2">
+              <div>
+                <label for="name">Nom *</label>
+                <input id="name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div>
+                <label for="phone">Téléphone *</label>
+                <input id="phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" />
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Choix des plats et quantités *</legend>
+              <p class="muted">Sélectionnez au moins une ligne.</p>
+              <div class="grid grid-2">
+                <div>
+                  <label for="item1" class="sr-only">Plat 1</label>
+                  <select id="item1" name="item1">
+                    <option value="">— Choisir un plat —</option>
+                    <option>Lasagnes maison</option>
+                    <option>Poulet basquaise</option>
+                    <option>Curry végétarien</option>
+                    <option>Soupe du moment</option>
+                    <option>Quiche lorraine</option>
+                    <option>Salade césar</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qty1" class="sr-only">Quantité 1</label>
+                  <select id="qty1" name="qty1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid grid-2" style="margin-top:8px">
+                <div>
+                  <label for="item2" class="sr-only">Plat 2</label>
+                  <select id="item2" name="item2">
+                    <option value="">— Choisir un plat —</option>
+                    <option>Lasagnes maison</option>
+                    <option>Poulet basquaise</option>
+                    <option>Curry végétarien</option>
+                    <option>Soupe du moment</option>
+                    <option>Quiche lorraine</option>
+                    <option>Salade césar</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qty2" class="sr-only">Quantité 2</label>
+                  <select id="qty2" name="qty2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid grid-2" style="margin-top:8px">
+                <div>
+                  <label for="item3" class="sr-only">Plat 3</label>
+                  <select id="item3" name="item3">
+                    <option value="">— Choisir un plat —</option>
+                    <option>Lasagnes maison</option>
+                    <option>Poulet basquaise</option>
+                    <option>Curry végétarien</option>
+                    <option>Soupe du moment</option>
+                    <option>Quiche lorraine</option>
+                    <option>Salade césar</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qty3" class="sr-only">Quantité 3</label>
+                  <select id="qty3" name="qty3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset style="margin-top:12px">
+              <legend>Boisson (optionnel)</legend>
+              <div class="grid grid-2">
+                <div>
+                  <label for="drink1" class="sr-only">Boisson</label>
+                  <select id="drink1" name="drink1">
+                    <option value="">— Choisir une boisson —</option>
+                    <option>Eau minérale</option>
+                    <option>Soda</option>
+                    <option>Jus d'orange</option>
+                    <option>Bière sans alcool</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qtyDrink1" class="sr-only">Quantité boisson</label>
+                  <select id="qtyDrink1" name="qtyDrink1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset style="margin-top:12px">
+              <legend>Dessert (optionnel)</legend>
+              <div class="grid grid-2">
+                <div>
+                  <label for="dessert1" class="sr-only">Dessert</label>
+                  <select id="dessert1" name="dessert1">
+                    <option value="">— Choisir un dessert —</option>
+                    <option>Tiramisu</option>
+                    <option>Mousse au chocolat</option>
+                    <option>Tarte aux pommes</option>
+                    <option>Salade de fruits</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="qtyDessert1" class="sr-only">Quantité dessert</label>
+                  <select id="qtyDessert1" name="qtyDessert1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <section aria-live="polite" aria-atomic="true" class="card" id="items-preview" style="display:none;margin-top:12px">
+              <h3 style="margin-top:0">Votre sélection</h3>
+              <ul id="items-preview-list"></ul>
+              <p id="items-total" style="margin-top:8px;font-weight:600"></p>
+            </section>
+
+            <div class="grid grid-2">
+              <div>
+                <label for="mode">Mode *</label>
+                <select id="mode" name="mode" required>
+                  <option value="pickup">Retrait</option>
+                  <option value="delivery">Livraison</option>
+                </select>
+              </div>
+              <div>
+                <label for="slot">Créneau horaire *</label>
+                <input id="slot" name="slot" type="time" required />
+              </div>
+            </div>
+
+            <div id="delivery-address-bar" class="info-bar" style="display:none;margin-top:8px" aria-live="polite">
+              <label for="deliveryAddress" style="margin-top:0">Adresse de livraison *</label>
+              <input id="deliveryAddress" name="deliveryAddress" type="text" placeholder="N°, Rue, Code postal, Ville" autocomplete="street-address" />
+              <p class="muted" style="margin:6px 0 0">Saisissez l’adresse complète pour la livraison.</p>
+            </div>
+
+            <div>
+              <label for="allergies">Allergies (optionnel)</label>
+              <input id="allergies" name="allergies" type="text" placeholder="Amandes, gluten…" />
+            </div>
+
+            <div aria-live="polite" aria-atomic="true" id="form-status" class="muted"></div>
+
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+              <button class="btn" type="submit">Envoyer la commande</button>
+            </div>
+
+            <p class="muted" style="margin-top:8px">
+              <span id="order-rules">Min. commande et frais de livraison: à définir</span>
+            </p>
+          </form>
+
+          <aside class="card">
+            <h3>Infos retrait / livraison</h3>
+            <ul>
+              <li><strong>Adresse retrait: </strong><span id="pickup-address">—</span></li>
+              <li><strong>Zone livraison: </strong><span id="delivery-zone">—</span></li>
+              <li><strong>Frais: </strong><span id="delivery-fees">—</span></li>
+              <li><strong>Commande min: </strong><span id="order-min">—</span></li>
+            </ul>
+            <p style="margin:8px 0 0">
+              <a id="pickup-maps" class="btn btn-secondary" target="_blank" rel="noopener">Voir sur Google Maps</a>
+            </p>
+            <p>Contact: <a id="contact-phone" href="#">—</a> · <a id="contact-whatsapp" href="#">WhatsApp</a> · <a id="contact-email" href="#">Email</a></p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="infos" class="section container">
+        <h2>Infos</h2>
+        <p>Horaires: <span id="opening-hours">À définir</span></p>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>À propos</h2>
+        <p>Une cuisine familiale, des produits frais et une passion pour le fait maison.</p>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <ul>
+          <li>Téléphone: <a id="footer-phone" href="#">—</a></li>
+          <li>Email: <a id="footer-email" href="#">—</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container" role="contentinfo">
+      <p>&copy; <span id="year"></span> Les cuisines de Sandrine · <a href="/">Accueil</a></p>
+    </footer>
+
+    <!-- JSON-LD Restaurant placeholder -->
+    <script type="application/ld+json" id="jsonld-restaurant">{
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Les cuisines de Sandrine",
+      "url": "https://lescuisinesdesandrine.fr/",
+      "telephone": "+33600000000",
+      "address": {"@type": "PostalAddress", "streetAddress": "18 Boulevard du Président Kennedy, bâtiment La Dindouletto", "addressLocality": "Aix-en-Provence", "postalCode": "13090", "addressCountry": "FR"},
+      "servesCuisine": ["Française"],
+      "areaServed": "Aix-en-Provence",
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:30","closes":"14:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"18:30","closes":"21:30"}
+      ],
+      "hasMenu": "https://lescuisinesdesandrine.fr/#menu",
+      "makesOffer": [{"@type":"Offer","name":"Livraison","priceSpecification":{"@type":"DeliveryChargeSpecification","price": "2.00","priceCurrency":"EUR"}},{"@type":"Offer","name":"Retrait"}]
+    }</script>
+
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>
